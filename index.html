@@ -17,36 +17,65 @@ repo:
     <section id="form">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12">
+            <div style="text-align: center;">
             <h3>Topic Poll</h3>
             <p>We've got a lot of possible topics to choose from for our 2016 Spring Semester meetings.  Help determine which ones we focus on!  Rank the following topics with 1 being your top choice.  Rank as many or as few as you'd like.  If you don't have a preference, you can just give them all a ranking of 1. </p>
-            <form action="https://script.google.com/macros/s/AKfycbzkF_wHxE3jg_WcUNQCD4kDWoPFp_cIE4mR-yUa4-Fktwgaufg/exec" accept-charset="UTF-8" method="get">
+            </div>
+            <form action="https://script.google.com/macros/s/AKfycbzkF_wHxE3jg_WcUNQCD4kDWoPFp_cIE4mR-yUa4-Fktwgaufg/exec" accept-charset="UTF-8" method="get" style="float: none; margin: auto; width: 70%;">
               <!-- Enter Google Spreadsheet ID in the yaml -->
               <!-- Awful hack to put id in 0 spot - -->
               <!-- keep name of "a" as values are passed alphabetically  -->
               <input type="hidden" name="a" value='{{ page.id }}' />
               <!-- all your input fields here.... -->
               <fieldset>
-                <legend>Rank the following:</legend>
-                  <div>
-                  <label for="name">Your Name (optional): </label>
-                  <input type="text" name="name" placeholder="First Name Last Name" tabindex="1">
-                  </br>
-                  </div>
-                  <div>
-                  <label for="ggplot">More ggplot2: </label>
-                  <input type="number" name="ggplot" min="1" max="25" tabindex="2">
-                  </br>
-                  </div>
-                  <div>
-                  <label for="reproducible">Reproducible research with R (markdown, knitr, pandoc, etc.): </label>
-                  <input type="number" name="reproducible" min="1" max="25" tabindex="3">
-                  </br>
-                  </div>
+                <legend style="text-align: center;">Rank the following:</legend>
               </fieldset>
+
+              <input type="text" name="name" placeholder="First Name Last Name" tabindex="1">
+              <label for="name">Your Name (optional) </label>
+
               </br>
-              <button type="submit">Submit</button>
+              <input type="number" name="ggplot" min="1" max="25" tabindex="2">
+              <label for="ggplot">More ggplot2 </label>
+
+              </br>
+              <input type="number" name="databases" min="1" max="25" tabindex="6">
+              <label for="databases">Using dplyr to work with external databases </label>
+
+              </br>
+              <input type="number" name="reproducible" min="1" max="25" tabindex="3">
+              <label for="reproducible">Reproducible research with R (markdown, knitr, pandoc, etc.) </label>
+
+              </br>
+              <input type="number" name="github" min="1" max="25" tabindex="4">
+              <label for="github">Git and Github Basics </label>
+
+              </br>
+              <input type="number" name="tidy" min="1" max="25" tabindex="5">
+              <label for="tidy">Tidy Data (<a href="http://www.jstatsoft.org/v59/i10/">paper</a> </label>
+
+              </br>
+              <input type="number" name="dplyr" min="1" max="25" tabindex="6">
+              <label for="dplyr">More dplyr </label>
+
+              </br>
+              <input type="number" name="spatial" min="1" max="25" tabindex="7">
+              <label for="spatial">Spatial data/GIS in R </label>
+
+              </br>
+              <input type="number" name="programming" min="1" max="25" tabindex="8">
+              <label for="programming">Functions and programming with R </label>
+
+              </br>
+              <input type="text" name="other" placeholder="Other" tabindex="9">
+              <label for="programming">Other (suggest your own) </label>
+
+              </br>
+              </br>
+              <button type="submit">Submit</button
             </form>
+            </div>
           </div>
         </div>
       </div>

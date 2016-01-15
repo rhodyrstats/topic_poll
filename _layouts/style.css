@@ -19,8 +19,7 @@
   text-decoration: underline;
 }
 
-label {
-  display: inline-block;
-  width: 240px;
-  text-align: right;
-}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
