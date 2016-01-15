@@ -1,0 +1,21 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top", style="background-color: black;">
+    <div class="container">
+      <a class="navbar-brand" href="http://rhodyrstats.org">{{site.title}}</a>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="http://rhodyrstats.org"></a>
+          </li>
+          {% if page.repo %}
+          <li>
+            <a href="{{ page.repo }}">Event Repository</a>
+          </li>
+          {% endif %}
+          {% if page.registration %}
+          <li>
+            <a href="{{ page.registration }}">Registration</a>
+          </li>
+          {% endif %}
+        </ul>
+    </div>
+</nav>
