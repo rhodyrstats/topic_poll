@@ -18,3 +18,9 @@
   color: #D5D693;
   text-decoration: underline;
 }
+
+label {
+  display: inline-block;
+  width: 240px;
+  text-align: right;
+}
